@@ -1,35 +1,55 @@
 
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Selamat Datang ke KAPT A.I</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAPT A.I - Survey Interaktif</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #f2f2f2, #d6e0f5);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        .container {
+            padding-top: 100px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #002147;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 40px;
+        }
+        .btn {
+            background-color: #002147;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #004080;
+        }
+    </style>
 </head>
-<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
-    <div style="padding: 40px; max-width: 800px; margin: auto; background: white; box-shadow: 0 0 15px rgba(0,0,0,0.1); margin-top: 60px;">
-        <h1 style="color: #2a2a2a;">Selamat Datang ke Sistem Interaktif KAPT A.I</h1>
-        <p>
-            KAPT A.I ialah ejen AI rasmi Markas Pemerintahan Medan Timur Tentera Darat, bersedia membantu anda memahami dan melengkapkan borang selidik dengan cara yang inovatif, mesra pengguna dan profesional.
-        </p>
-        <p>
-            Klik butang di bawah untuk mengisi borang penilaian AI:
-        </p>
-        <a href="https://form.typeform.com/to/vGBZK69p" target="_blank" style="display: inline-block; padding: 14px 28px; background-color: #007bff; color: white; text-decoration: none; border-radius: 5px; font-size: 16px;">
-            Isi Borang Sekarang
-        </a>
+<body>
+    <div class="container">
+        <h1>Selamat Datang ke KAPT A.I</h1>
+        <p>Pembantu maya interaktif untuk warga Markas Pemerintahan Medan Timur Tentera Darat</p>
+        <a href="https://form.typeform.com/to/vGBZK69p" target="_blank" class="btn">Isi Borang Sekarang</a>
     </div>
 
-    <!-- D-ID Agent Script -->
-    <script type="module"
-        src="https://agent.d-id.com/v2/index.js"
-        data-mode="fabio"
-        data-client-key="Z29vZ2xlLW9hdXRoMnwxMDA4NzI4MTUzNTMwNjY4MjI3OTI6SFNnU3JVVlE2Y2xfY0ZoX1dwcGk1"
-        data-agent-id="v2_agt_xtzg72Zt"
-        data-name="did-agent"
-        data-monitor="true"
-        data-orientation="horizontal"
-        data-position="right">
-    </script>
+    <!-- D-ID Floating Assistant via iframe -->
+    <iframe
+      src="https://agent.d-id.com/v2/index.html?clientKey=Z29vZ2xlLW9hdXRoMnwxMDA4NzI4MTUzNTMwNjY4MjI3OTI6SFNnU3JVVlE2Y2xfY0ZoX1dwcGk1&agentId=v2_agt_xtzg72Zt&mode=fabio"
+      style="position:fixed; bottom:20px; right:20px; width:400px; height:600px; border:none; z-index:9999;"
+      allow="microphone; camera; autoplay">
+    </iframe>
 </body>
 </html>
