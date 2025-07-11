@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KAPT A.I – Assistant Interface</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f1f3f9;
+      margin: 0;
+      padding: 40px;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2em;
+      color: #2c3e50;
+    }
+    p {
+      font-size: 1.2em;
+      color: #34495e;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background-color: #2e86de;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    iframe#d-id-agent {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 400px;
+      height: 600px;
+      border: none;
+      z-index: 9999;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+  <h1>Selamat Datang ke Portal KAPT A.I</h1>
+  <p>Pembantu digital interaktif anda di Markas Medan Timur Tentera Darat.</p>
+  <a class="button" href="https://form.typeform.com/to/vGBZK69p" target="_blank">📋 Isi Borang Sekarang</a>
+
+  <!-- Floating D-ID Agent -->
+  <iframe 
+    id="d-id-agent"
+    src="https://embed.d-id.com/launcher/v2_agt_xtzg72Zt" 
+    allow="camera *; microphone *; autoplay *; encrypted-media *;"
+    title="KAPT A.I Assistant">
+  </iframe>
+</body>
+</html>
